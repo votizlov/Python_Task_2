@@ -1,6 +1,6 @@
 n1, m1 = [int(i) for i in input("Введите n1, m1").split()]
 a = [[int(j) for j in input("Input a").split()] for i in range(n1)]
-n2, m2 = [int(i) for i in input("Введите n1, m1").split()]
+n2, m2 = [int(i) for i in input("Введите n2, m2").split()]
 b = [[int(j) for j in input("input b").split()] for i in range(n2)]
 
 
@@ -18,8 +18,8 @@ def main(a, b):
             for j in range(len(b[0])):
                 if a[i][j] == b[0][0]:
                     if check(a, b, i, j):
-                        return 1
+                        print(i,j)
     return 0
 
 
-print(main(a, b))
+main(a, b)
