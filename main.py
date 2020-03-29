@@ -1,7 +1,7 @@
 import numpy
 
 n1, m1 = [int(i) for i in input("Введите n, m").split()]
-a = [[int(j) for j in input("Input a").split()] for i in range(n1)]
+a = [[int(j) for j in input("Input a[" + str(i) + "]").split()] for i in range(n1)]
 
 
 def main(a):
